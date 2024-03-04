@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="64dp"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp">
+    <!-- Cần hỏi để tối ưu layout_width -->
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/proptit_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:text="Hoang Quoc Anh"
+        android:textColor="@color/brighter_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/message_container">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/proptit_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:text="Hoang Quoc Anh"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/chat"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="@id/avatar" />
+
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:text="Hello world"
+        app:layout_constraintBottom_toBottomOf="@id/avatar"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:textColor="@color/brighter_gray"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_unread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
